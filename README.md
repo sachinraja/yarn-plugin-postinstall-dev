@@ -14,7 +14,7 @@ yarn plugin import https://raw.githubusercontent.com/sachinraja/yarn-plugin-post
 {
   "name": "yarn-plugin-postinstall-dev",
   "scripts": {
-    "postInstallDev": "husky install"
+    "postinstallDev": "husky install"
   }
 }
 ```
