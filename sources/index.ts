@@ -1,10 +1,11 @@
-import { Plugin } from '@yarnpkg/core'
+import type { Plugin } from '@yarnpkg/core'
 import RunCommand from '@yarnpkg/plugin-essentials/lib/commands/run'
+
 const plugin: Plugin = {
   hooks: {
-    afterAllInstalled: () => {
+    afterAllInstalled: async () => {
       const runCmd = new RunCommand()
-      runCmd.cli.run(['run', 'postinstallDev'])
+      await runCmd.cli.run(['run', 'postinstallDev'])
     },
   },
 }
