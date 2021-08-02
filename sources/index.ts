@@ -1,11 +1,10 @@
 import type { Plugin } from '@yarnpkg/core'
-import RunCommand from '@yarnpkg/plugin-essentials/lib/commands/run'
+import { spawnSync } from 'child_process'
 
 const plugin: Plugin = {
   hooks: {
-    afterAllInstalled: async () => {
-      const runCmd = new RunCommand()
-      await runCmd.cli.run(['run', 'postinstallDev'])
+    afterAllInstalled() {
+      spawnSync('yarn', ['run', 'postinstallDev'])
     },
   },
 }
