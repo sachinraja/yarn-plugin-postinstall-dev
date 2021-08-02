@@ -1,6 +1,6 @@
 # yarn-plugin-postinstall-dev
 
-Run a `postInstallDev` script after installation (`yarn install`).
+Run a `postinstallDev` script after installation (`yarn install`). Works for Yarn v2 and v3.
 
 ## Installation
 
