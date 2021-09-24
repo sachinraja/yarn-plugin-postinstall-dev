@@ -1,5 +1,5 @@
 import type { Plugin, Project } from '@yarnpkg/core'
-import { spawn } from 'child_process'
+import { spawn } from 'cross-spawn'
 
 const plugin: Plugin = {
   hooks: {
