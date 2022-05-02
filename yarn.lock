@@ -361,6 +361,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/emscripten@npm:^1.39.6":
+  version: 1.39.6
+  resolution: "@types/emscripten@npm:1.39.6"
+  checksum: 437f2f9cdfd9057255662508fa9a415fe704ba484c6198f3549c5b05feebcdcd612b1ec7b10026d2566935d05d3c36f9366087cb42bc90bd25772a88fcfc9343
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.0":
   version: 3.7.1
   resolution: "@types/eslint-scope@npm:3.7.1"
@@ -785,6 +792,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/fslib@npm:^3.0.0-rc.4":
+  version: 3.0.0-rc.4
+  resolution: "@yarnpkg/fslib@npm:3.0.0-rc.4"
+  dependencies:
+    "@yarnpkg/libzip": ^3.0.0-rc.4
+    tslib: ^1.13.0
+  checksum: db8bb4d7ce3b0f2180fead2329bd7455ea599f0050d59d10b07faf7524a83b72e5eda4049748c811b2db07b48aa01dbc5b90a2223e23c1fcbc9ba359374c2819
+  languageName: node
+  linkType: hard
+
 "@yarnpkg/json-proxy@npm:^2.1.0, @yarnpkg/json-proxy@npm:^2.1.1":
   version: 2.1.1
   resolution: "@yarnpkg/json-proxy@npm:2.1.1"
@@ -805,6 +822,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/libzip@npm:^3.0.0-rc.4":
+  version: 3.0.0-rc.4
+  resolution: "@yarnpkg/libzip@npm:3.0.0-rc.4"
+  dependencies:
+    "@types/emscripten": ^1.39.6
+    tslib: ^1.13.0
+  checksum: c3c68ec389a904f89f95aea5a0585e7e172a6371bde8ccff998fe6c19dcabacc37859d9325a0e1bc33245e4a1d1bc084bdf6fda3241af72bd6bd5b6526365e98
+  languageName: node
+  linkType: hard
+
 "@yarnpkg/parsers@npm:^2.3.0, @yarnpkg/parsers@npm:^2.4.0":
   version: 2.4.0
   resolution: "@yarnpkg/parsers@npm:2.4.0"
@@ -812,6 +839,16 @@ __metadata:
     js-yaml: ^3.10.0
     tslib: ^1.13.0
   checksum: ae077862b829defc95e85a328270dac5f242628656bb938e5da37913b1d0caab545de9ed9d1df3bc17f4e8da842b545df87931d39902aa2132e90699d96ecc33
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/parsers@npm:^3.0.0-rc.4":
+  version: 3.0.0-rc.4
+  resolution: "@yarnpkg/parsers@npm:3.0.0-rc.4"
+  dependencies:
+    js-yaml: ^3.10.0
+    tslib: ^1.13.0
+  checksum: 998a3e87da98705f3c3b6d5f4d6d9d0dc8a20853b969cc4da87f8ca61c60a3f6c7e85ba5383e424dc79dcdaaa7bc36b7b3e2439915a7393a9111a2a9062b29eb
   languageName: node
   linkType: hard
 
@@ -1144,6 +1181,24 @@ __metadata:
   bin:
     shell: ./lib/cli.js
   checksum: fcddc49af7d3098ff959880e4fe4841d10efcc8424dbc0268daf5735485a6a91d04b3bf85a1e08f8571ddd3ac1437e4f8100cff88dd65c58f8688f9523357069
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/shell@npm:^4.0.0-rc.4":
+  version: 4.0.0-rc.4
+  resolution: "@yarnpkg/shell@npm:4.0.0-rc.4"
+  dependencies:
+    "@yarnpkg/fslib": ^3.0.0-rc.4
+    "@yarnpkg/parsers": ^3.0.0-rc.4
+    chalk: ^3.0.0
+    clipanion: ^3.2.0-rc.10
+    cross-spawn: 7.0.3
+    fast-glob: ^3.2.2
+    micromatch: ^4.0.2
+    tslib: ^1.13.0
+  bin:
+    shell: ./lib/cli.js
+  checksum: 4bc08895392b75880cd76386b0a5d590d29cf240343b99b33e8dd66233d0b7bc4fa4154180712726050b7ca3028a8792688108257a759165b4d83950e640a710
   languageName: node
   linkType: hard
 
@@ -1535,6 +1590,17 @@ __metadata:
   peerDependencies:
     typanion: "*"
   checksum: 3a4b0c1e7d29a0f3c41860323494114a3533298134761e564b9057fe26ceef929a06da73cc3dfc0000e02c89ad7222984109a60213a212c10ea71ac6cacabc89
+  languageName: node
+  linkType: hard
+
+"clipanion@npm:^3.2.0-rc.10":
+  version: 3.2.0-rc.11
+  resolution: "clipanion@npm:3.2.0-rc.11"
+  dependencies:
+    typanion: ^3.8.0
+  peerDependencies:
+    typanion: "*"
+  checksum: cbf37dd1b991c33f3450c1896e80d5a15c8e5fe647058020037bbd20e4afd6937612ee8877b9009d5128a07b4a01aa50297883e25520f61f0d249543c62abbc0
   languageName: node
   linkType: hard
 
@@ -3713,6 +3779,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typanion@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "typanion@npm:3.8.0"
+  checksum: ea3f97072c72efd4f1ac2c8996dad61e2a0810e6e2835f72b1e076e3f4c796666dc5f60af88329f3892173419a114b5d58a7369c16fdc46d76e3d9a55e8c486d
+  languageName: node
+  linkType: hard
+
 typescript@4.4.3:
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
@@ -3897,6 +3970,7 @@ typescript@4.4.3:
   dependencies:
     "@yarnpkg/builder": ^2
     "@yarnpkg/core": ^3.0.0
+    "@yarnpkg/shell": ^4.0.0-rc.4
     typescript: 4.4.3
   languageName: unknown
   linkType: soft

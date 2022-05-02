@@ -6,7 +6,8 @@
     "postinstallDev": "echo test message"
   },
   "dependencies": {
-    "@yarnpkg/core": "^3.0.0"
+    "@yarnpkg/core": "^3.0.0",
+    "@yarnpkg/shell": "^4.0.0-rc.4"
   },
   "devDependencies": {
     "@yarnpkg/builder": "^2",
