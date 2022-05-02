@@ -6,11 +6,9 @@
     "postinstallDev": "echo test message"
   },
   "dependencies": {
-    "@yarnpkg/core": "^3.0.0",
-    "cross-spawn": "^7.0.3"
+    "@yarnpkg/core": "^3.0.0"
   },
   "devDependencies": {
-    "@types/cross-spawn": "6.0.2",
     "@yarnpkg/builder": "^2",
     "typescript": "4.4.3"
   },
