@@ -1,8 +1,6 @@
 import type { Plugin, Project } from '@yarnpkg/core'
 import { execute } from '@yarnpkg/shell'
 
-
-
 const plugin: Plugin = {
   hooks: {
     async afterAllInstalled(project: Project) {
