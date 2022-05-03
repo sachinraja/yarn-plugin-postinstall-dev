@@ -7,13 +7,20 @@ const plugin: Plugin = {
   hooks: {
     async afterAllInstalled(project: Project) {
       const locator = project.topLevelWorkspace.anchoredLocator
-      if (scriptUtils.hasPackageScript(locator, scriptName, { project })) {
-        return await scriptUtils.executePackageScript(locator, scriptName, [], {
+      if (await scriptUtils.hasPackageScript(locator, scriptName, { project })) {
+        const exitCode = await scriptUtils.executePackageScript(locator, scriptName, [], {
           project,
           stdin: process.stdin,
           stdout: process.stdout,
           stderr: process.stderr
         })
+
+        if (exitCode !== 0) {
+          const error = new Error(`Postinstall script failed with exit code ${exitCode}`)
+          error.stack = undefined
+
+          throw error
+        }
       }
     },
   },
