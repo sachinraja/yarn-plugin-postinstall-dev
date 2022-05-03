@@ -16,7 +16,7 @@ const plugin: Plugin = {
         })
 
         if (exitCode !== 0) {
-          const error = new Error(`Postinstall script failed with exit code ${exitCode}`)
+          const error = new Error(`${scriptName} script failed with exit code ${exitCode}`)
           error.stack = undefined
 
           throw error
